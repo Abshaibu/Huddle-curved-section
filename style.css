@@ -1,0 +1,534 @@
+/* **************GENERAL STYLES****************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-weight: 400;
+}
+
+input,
+button {
+    outline: none;
+    border: none;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    text-align: center;
+}
+
+p {
+    font-size: .883em;
+    color: hsl(192, 100%, 9%);
+    font-weight: 400;
+}
+
+a,
+button,
+footer,
+.footer-logo p,
+.newsletter h2,
+.newsletter p,
+input[type='submit'] {
+    color: hsl(0, 0%, 100%);
+}
+
+.newsletter p {
+    font-size: .89em;
+}
+
+.gt,
+.yu {
+    background-color: rgb(246, 251, 255);
+}
+
+
+button,
+.container,
+.members-stat,
+.message-stat {
+    margin: 0 auto;
+}
+
+.container {
+    width: 85%;
+}
+
+.social-media,
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-headings {
+    margin: 3em 0 .6em;
+    font-size: 1.69em;
+}
+
+h1,
+h2,
+h3,
+.stat-figures {
+    color: hsl(192, 100%, 9%);
+    font-family: 'Poppins',
+        sans-serif;
+    font-weight: 700;
+}
+
+input[type='submit'],
+input[type='email'] {
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.box,
+.try-btn {
+    background-color: hsl(0, 0%, 100%);
+}
+
+/*  *************HEADER SECTION**************/
+header {
+    height: 18vh;
+}
+
+.logo {
+    width: 35%;
+    max-width: 35%;
+}
+
+.try-btn {
+    margin: 0;
+    width: 35%;
+    max-width: 92px;
+    padding: .5em .9em;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    box-shadow: 0 0 5px rgba(208, 13, 169, 0.25);
+    font-family: 'Open Sans',
+        sans-serif;
+    font-weight: 400;
+}
+
+.try-btn:hover {
+    border: 1px solid hsl(321, 100%, 78%);
+    color: hsl(321, 100%, 78%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* ***********  MAIN-CONTENT SECTION****************/
+.intro h1 {
+    margin-top: 4em;
+    font-size: 1.79em;
+}
+
+.intro p {
+    margin-top: 1.1em;
+}
+
+.intro button {
+    margin-bottom: 6.5em;
+}
+
+.members-stat,
+.message-stat {
+    width: 42%;
+    margin-top: 5em;
+    text-align: left;
+}
+
+.stat-icon {
+    width: 20%;
+}
+
+.stat-figures {
+    font-size: 3.5em;
+}
+
+.stat-text {
+    color: hsl(206, 10%, 57%);
+}
+
+.your-users,
+.grow-together,
+.flow-conversations {
+    padding: 5em 0 6em;
+}
+
+.ready-to-build {
+    padding-bottom: 14em;
+}
+
+button {
+    width: 83%;
+    max-width: 303px;
+    padding: 1em 3em;
+    background-color: hsl(322, 100%, 66%);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 58px;
+    margin-top: 3.8em;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: .89em;
+    font-weight: 700;
+}
+
+.newsletter h2 {
+    text-transform: uppercase;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-weight: 600;
+}
+
+.fas,
+.far {
+    font-size: 1.4em;
+}
+
+.box {
+    color: hsl(192, 100%, 9%);
+    padding: .2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-box {
+    justify-content: flex-end;
+}
+
+.ig .fab {
+    font-size: 2.1em;
+}
+
+.box .fab {
+    font-size: 1.5em;
+}
+
+button,
+.try-btn,
+input[type='submit'] {
+    transition: background .4s ease;
+}
+
+button:hover,
+input[type='submit']:hover {
+    background-color: hsl(321, 100%, 78%);
+}
+
+/* ***********  MOBILE-BACKGROUND SECTION****************/
+.footer-curve {
+    background: url(./images/bg-footer-top-mobile.svg);
+    height: 9vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ready-curve {
+    background: url(./images/bg-section-bottom-mobile-2.svg);
+    height: 36vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.users-curve {
+    background: url('./images/bg-section-top-mobile-2.svg');
+    height: 21vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flow-curve {
+    background: url(./images/bg-section-bottom-mobile-1.svg);
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.grow-curve {
+    background: url(./images/bg-section-top-mobile-1.svg);
+    height: 21vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 450px) {
+
+    .grow-curve,
+    .users-curve {
+        height: 35vh;
+    }
+
+    .footer-curve {
+        height: 16vh;
+    }
+}
+
+/* ***********  DESKTOP-BACKGROUND SECTION****************/
+@media screen and (min-width: 768px) {
+    .grow-curve {
+        background: url(./images/bg-section-top-desktop-1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 24vh;
+        margin-top: 5em;
+    }
+
+    .flow-curve {
+        background: url(./images/bg-section-bottom-desktop-1.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .users-curve {
+        background: url('./images/bg-section-top-desktop-2.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 23vh;
+    }
+
+    .ready-curve {
+        background: url(./images/bg-section-bottom-desktop-2.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .footer-curve {
+        background: url(./images/bg-footer-top-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 24vh;
+    }
+}
+
+/* ***********  FOOTER SECTION****************/
+.background {
+    background-color: hsl(192, 100%, 9%);
+}
+
+.newsletter {
+    padding: 3em 0 6em;
+}
+
+.newsletter p {
+    margin: 1.1em 0 1.99em;
+}
+
+input {
+    height: 48px;
+    border-radius: 5px;
+}
+
+input[type='email'] {
+    width: 100%;
+    font-size: .9em;
+    padding-left: 1em;
+}
+
+span {
+    font-size: .84em;
+    color: hsl(0, 100%, 63%);
+    display: none;
+}
+
+span:hover,
+input[type='email']:hover {
+    display: block;
+    border: 1px solid hsl(0, 100%, 63%);
+}
+
+input[type='submit'] {
+    width: 50%;
+    margin: 1em 0 0 auto;
+    background-color: hsl(322, 100%, 66%);
+}
+
+.footer-nav,
+.newsletter p {
+    max-width: 340px;
+}
+
+.f-logo {
+    margin-bottom: .7em;
+    width: 60%;
+    max-width: 191px;
+}
+
+
+
+li a {
+    text-decoration: none;
+    margin-left: 1em;
+}
+
+ul li:first-child {
+    margin-bottom: .6em;
+}
+
+.social-media {
+    width: 40%;
+}
+
+.media {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.box:hover {
+    background-color: hsl(192, 88%, 48%);
+}
+
+.footer-logo,
+.contacts,
+.social-media {
+    margin-bottom: 2.5em;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 20vh;
+    }
+
+    .logo {
+        width: 20%;
+        max-width: 20%;
+    }
+
+    .try-btn {
+        width: 15%;
+        max-width: 120px;
+        padding: .7em .6em;
+    }
+
+    .intro h1 {
+        font-size: 2.73em;
+    }
+
+    .intro-p {
+        width: 60%;
+        font-size: 1.25em;
+    }
+
+    .ready-to-build h2 {
+        font-size: 2.2em;
+    }
+
+    .intro,
+    .ready-to-build {
+        width: 70%;
+    }
+
+    .stats {
+        width: 72%;
+    }
+
+    .message-stat {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+    .stats,
+    form,
+    .footer,
+    .your-users,
+    .grow-together,
+    .flow-conversations {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grow-img,
+    .users-img,
+    .flow-img {
+        width: 42%;
+    }
+
+    .grow-texts,
+    .users-texts,
+    .flow-texts {
+        width: 43%;
+        text-align: left;
+    }
+
+    .sub-headings {
+        margin-top: 0;
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: .959em;
+    }
+
+    .footer {
+        align-items: flex-start;
+    }
+
+    .newsletter,
+    .users-img,
+    .grow-img {
+        order: 2;
+    }
+
+    .stat-figures {
+        font-size: 5em;
+    }
+
+    .stat-text {
+        font-size: 1.25em;
+    }
+
+    .stat-icon {
+        width: 10%;
+    }
+
+    .stats,
+    .intro-p,
+    .ready-to-build {
+        margin: 0 auto;
+    }
+
+    .newsletter,
+    .footer-nav {
+        padding-top: 5em;
+    }
+
+    .newsletter,
+    .footer-nav {
+        width: 45%;
+    }
+
+    input[type='submit'] {
+        margin: 0;
+        width: 32%;
+    }
+
+    input[type='email'] {
+        width: 60%;
+    }
+
+    .started-btn {
+        max-width: 380px;
+        font-size: 1em;
+        padding: 1.6em 3em;
+    }
+}
